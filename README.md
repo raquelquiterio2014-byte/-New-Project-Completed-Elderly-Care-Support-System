@@ -1,70 +1,23 @@
--Elderly-Care-Support-System
+# Elderly Care Support System
 
+Desktop study project in Python and CustomTkinter for managing older-adult care information. It stores users, medication entries, routine activities, incidents and messages in a local SQLite database, with dashboard and report views. It is an organizational prototype, not a medical alert service.
 
-Elderly Care Support System, developed in Python with a modern graphical interface and integrated database management.
+## Run locally
 
-🎯 Project Goal
+Requires Python with a graphical desktop:
 
-The main objective of this system is to assist caregivers, family members, and elderly individuals in organizing daily care routines, medication schedules, communication, and health-related records in a simple and user-friendly way.
+```bash
+python -m venv .venv
+python -m pip install -r requirements.txt
+python ElderlyCareSystem.py
+```
 
-✨ Key Features
+The SQLite file `cuidados_idoso.db` is created beside the script (or beside the packaged executable). Keep a backup of that file and use a writable directory. It contains personal information; do not commit a real database to a public repository.
 
-👤 User Management
+## Scope and verification
 
-💊 Medication Control and Reminders
+The program has screens for entries, schedules, alerts, communication and reports. Reminders depend on the running application; the repository does not provide a background service or verified medical notifications. The Python source has been checked for syntax, but GUI behavior has not been tested here. Screenshots in this repository illustrate the project.
 
-📅 Daily Activities Scheduling
+## Next evidence for a portfolio
 
-⚠️ Occurrence and Incident Registration
-
-🔔 Medication Alert System
-
-🧑‍⚕️ Caregiver Dashboard
-
-👴 Elderly Dashboard
-
-💬 Communication Module Between Caregiver and Family
-
-📄 Daily Reports
-
-📊 Final Summary Reports
-
-🛠️ Technologies Used
-
-🔹 Python
-
-🔹 CustomTkinter
-
-🔹 SQLite
-
-🔹 Object-Oriented Programming (OOP)
-
-🔹 CRUD Operations
-
-🔹 Desktop Application Development
-
-🔹 Database Management
-
-📚 What I Learned
-
-This project provided valuable hands-on experience in:
-
-✅ Designing and implementing a complete software solution
-
-✅ Creating modern graphical user interfaces with CustomTkinter
-
-✅ Working with SQLite databases and persistent data storage
-
-✅ Applying Object-Oriented Programming concepts in a real-world project
-
-✅ Developing CRUD functionalities for multiple modules
-
-✅ Generating reports and dashboards for decision support
-
-✅ Packaging Python applications into standalone Windows executables using PyInstaller
-
-🚀 Project Evolution
-
-The system evolved from a simple console-based application into a complete desktop solution featuring multiple integrated modules, a modern user interface, automated database management, reporting capabilities, and executable deployment.
-
-Beyond technical development, this project reinforced the importance of creating technology that can positively impact people's lives by supporting caregivers and improving elderly care management.
+Record a short walkthrough with sample, non-personal data and document a tested packaging command if distributing a Windows executable.
